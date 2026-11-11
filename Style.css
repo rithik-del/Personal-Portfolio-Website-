@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101426;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #171d35;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #9a83ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #9a83ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(120deg, #101426, #292052);
+}
+
+.hero h1 {
+    font-size: 65px;
+    color: #9a83ff;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #7557f6;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+section:not(.hero) {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #9a83ff;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#about p {
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #202945;
+    padding: 30px;
+    border-radius: 12px;
+    min-width: 180px;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #30265b;
+}
+
+.card p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #171d35;
+    color: #aaa;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
